@@ -625,7 +625,7 @@ AlienBullet = function () {
       this.context.beginPath();
       this.context.moveTo(this.x, this.y);
       this.context.lineTo(this.x-this.vel.x, this.y-this.vel.y);
-      this.context.stroke();
+\      this.context.stroke();
       this.context.restore();
     }
   };
@@ -641,9 +641,7 @@ Asteroid = function () {
                5,   4,
               10,   0,
                5,  -6,
-               2, -10,
-              -4, -10,
-              -4,  -5]);
+               2, -10]);
 
   this.visible = true;
   this.scale = 6;
